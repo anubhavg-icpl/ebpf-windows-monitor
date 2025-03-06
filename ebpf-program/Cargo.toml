@@ -1,0 +1,13 @@
+# ebpf-program/Cargo.toml
+[package]
+name = "ebpf-program"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# This tells Cargo to build a static library
+[lib]
+name = "ebpf_program"
+path = "src/main.c"
+crate-type = ["staticlib"]
